@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { CreateSoundDto } from './dto/create-sound.dto';
 import { UpdateSoundDto } from './dto/update-sound.dto';
+import { sounds } from './sounds';
 
 @Injectable()
 export class SoundsService {
@@ -9,7 +10,7 @@ export class SoundsService {
   }
 
   findAll() {
-    return `This action returns all sounds`;
+    return sounds;
   }
 
   findOne(id: number) {

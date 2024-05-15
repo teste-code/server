@@ -8,12 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SoundsService = void 0;
 const common_1 = require("@nestjs/common");
+const sounds_1 = require("./sounds");
 let SoundsService = class SoundsService {
     create(createSoundDto) {
         return 'This action adds a new sound';
     }
     findAll() {
-        return `This action returns all sounds`;
+        return sounds_1.sounds;
     }
     findOne(id) {
         return `This action returns a #${id} sound`;
