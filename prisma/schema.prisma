@@ -17,6 +17,7 @@ model User {
   id        Int      @id @default(autoincrement())
   slug      String   @default(uuid())
   password  String
+  name String
   email     String
   sound     Sound[]
   profile   Profile?
